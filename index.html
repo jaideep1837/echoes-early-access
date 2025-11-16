@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Echoes of the Future</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+  body {
+    font-family: 'Inter', sans-serif;
+    background: radial-gradient(circle at 20% 20%, rgba(255,78,40,0.12), transparent 60%),
+                radial-gradient(circle at 80% 80%, rgba(52,215,255,0.10), transparent 60%),
+                linear-gradient(135deg, #0b0b0f, #1a0f24 35%, #3f1d22 70%, #0f0c18);
+    background-attachment: fixed;
+    color: #f4f4f4;
+  }
+
+  .glass {
+    backdrop-filter: blur(10px);
+    background: rgba(15, 15, 17, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .accent-primary { color:#FF4E28; }
+  .accent-secondary { color:#34D7FF; }
+  .accent-gold { color:#FFB743; }
+
+  .btn-accent {
+    background: linear-gradient(135deg, #FF4E28, #FFB743);
+    color: #0b0b0f;
+  }
+  .btn-accent:hover { opacity: 0.9; }
+
+  .gallery-img {
+    width: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+    height: 320px; /* fixed height for consistency */
+    border-radius: 12px;
+   }
+
+    @media (min-width: 768px) {
+    .gallery-img {
+        height: 420px;
+    }
+    }
+
+</style>
+</head>
+<body class="text-gray-200">
+
+  <!-- HEADER -->
+  <header class="fixed inset-x-0 top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-12 h-12 bg-gradient-to-r from-emerald-400 to-cyan-400 rounded shadow-lg flex items-center justify-center">
+          <svg width="34" height="20" viewBox="0 0 34 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 16C6 7 12 2 17 2C24 2 32 8 32 8" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div>
+          <div class="text-xl font-extrabold tracking-wider">Echoes</div>
+          <div class="text-xs text-gray-300">AIIMS Bilaspur • Annual Fest</div>
+        </div>
+      </div>
+
+      <nav class="hidden md:flex gap-6 items-center">
+        <a href="#about" class="hover:text-amber-300">About</a>
+        <a href="#events" class="hover:text-amber-300">Major Events</a>
+        <a href="#faq" class="hover:text-amber-300">FAQ</a>
+        <a href="#gallery" class="hover:text-amber-300">Gallery</a>
+        <a href="#register" class="bg-red-600 px-4 py-2 rounded-md shadow hover:opacity-90">Event Registration</a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden">
+        <button id="mobileBtn" class="p-2 bg-gray-800/40 rounded">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobileDrawer" class="md:hidden hidden glass px-4 py-6">
+      <a href="#about" class="block py-2">About</a>
+      <a href="#events" class="block py-2">Major Events</a>
+      <a href="#faq" class="block py-2">FAQ</a>
+      <a href="#gallery" class="block py-2">Gallery</a>
+      <a href="#register" class="block py-2 text-red-400 font-semibold">Basic Registration</a>
+    </div>
+  </header>
+
+  <main class="pt-28">
+
+    <!-- HERO / COUNTDOWN -->
+    <section class="min-h-[80vh] flex items-center justify-center px-4 relative">
+
+        <div class="max-w-3xl w-full text-center space-y-6">
+    
+        <!-- Top Heading -->
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+            Echoes 2025 <span class="text-gray-300 font-extrabold">Begins In</span>
+        </h1>
+    
+        <!-- Sub text -->
+        <p class="text-gray-300 text-lg md:text-xl">
+            The countdown has started... Echoes 5.0 registrations are officially live!  
+            It's the fifth edition — join the fever.
+        </p>
+    
+        <!-- COUNTDOWN -->
+        <div class="mt-10 grid grid-cols-4 gap-4 text-center">
+    
+            <div>
+            <div id="days" class="text-4xl md:text-5xl font-bold">23</div>
+            <div class="text-xs text-gray-400 mt-1">Days</div>
+            </div>
+    
+            <div>
+            <div id="hours" class="text-4xl md:text-5xl font-bold">8</div>
+            <div class="text-xs text-gray-400 mt-1">Hours</div>
+            </div>
+    
+            <div>
+            <div id="minutes" class="text-4xl md:text-5xl font-bold">24</div>
+            <div class="text-xs text-gray-400 mt-1">Minutes</div>
+            </div>
+    
+            <div>
+            <div id="seconds" class="text-4xl md:text-5xl font-bold">39</div>
+            <div class="text-xs text-gray-400 mt-1">Seconds</div>
+            </div>
+    
+        </div>
+    
+        <!-- Buttons (just like screenshot) -->
+        <div class="flex justify-center gap-4 mt-10">
+    
+            <!-- Primary Button -->
+            <a href="#register"
+            class="px-8 py-3 rounded-lg text-white font-semibold text-lg
+                    bg-gradient-to-r from-orange-500 to-red-500 shadow-lg hover:opacity-90">
+            Register Now
+            </a>
+    
+            <!-- Secondary Button -->
+            <a href="#about"
+            class="px-8 py-3 rounded-lg text-white font-semibold text-lg
+                    border border-white/60 hover:bg-white/10 transition">
+            Learn More
+            </a>
+    
+        </div>
+    
+        </div>
+    
+    </section>
+  
+
+    <!-- ABOUT -->
+    <section id="about" class="max-w-5xl mx-auto p-6 md:p-12">
+      <div class="rounded-2xl p-6 md:p-10 glass">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">About</h2>
+        <p class="text-gray-200 leading-relaxed">The fifth and most epic edition of ECHOES is here! A full week packed with everything you can think of — dance, music, drama, sports, art, literary battles, informal games, Mr. &amp; Ms. Echoes, and the much awaited star nights. From high-energy competitions to crazy fun nights, there's something for everyone.</p>
+        <p class="mt-4 text-sm text-gray-400">So mark your calendars 13th to 16th October — one of India's biggest medical fests is calling. Are you ready to feel the fever?</p>
+      </div>
+    </section>
+
+    <!-- MAJOR EVENTS -->
+    <section id="events" class="bg-black/40 py-8">
+      <div class="max-w-6xl mx-auto p-6 md:p-12">
+        <h2 class="text-2xl md:text-3xl font-bold text-center mb-6">Major Events</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+          <article class="rounded-xl overflow-hidden glass">
+            <img src="assets/me-1.png" alt="Kalakriti" class="w-full object-cover"/>
+            <div class="p-4">
+              <h3 class="font-bold text-lg">Kalakriti</h3>
+              <p class="text-sm text-gray-300 mt-2">A spine-chilling dramatics event that pushes the limits of theatrical horror and storytelling.</p>
+              <div class="mt-4 flex justify-between items-center">
+                <a class="text-red-400 font-semibold" href="#">View</a>
+                <span class="text-xs text-gray-400">Dec 13• 7:00 PM</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="rounded-xl overflow-hidden glass">
+            <img src="assets/me-2.png" alt="Music Night" class="w-full object-cover"/>
+            <div class="p-4">
+              <h3 class="font-bold text-lg">Star Night</h3>
+              <p class="text-sm text-gray-300 mt-2">A night of live performances and headline artists to end the festival on a high.</p>
+              <div class="mt-4 flex justify-between items-center">
+                <a class="text-red-400 font-semibold" href="#">View</a>
+                <span class="text-xs text-gray-400">Dec 14 • 9:00 PM</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="rounded-xl overflow-hidden glass">
+            <img src="assets/me-3.png" alt="Fights" class="w-full object-cover"/>
+            <div class="p-4">
+              <h3 class="font-bold text-lg">Sports &amp; Informals</h3>
+              <p class="text-sm text-gray-300 mt-2">Multiple outdoor and indoor games, friendly tournaments and playful events.</p>
+              <div class="mt-4 flex justify-between items-center">
+                <a class="text-red-400 font-semibold" href="#">View</a>
+                <span class="text-xs text-gray-400">Dec 15 • 10:00 AM</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="max-w-4xl mx-auto p-6 md:p-12">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center">FAQ</h2>
+      <div class="space-y-4">
+
+        <div class="glass rounded-lg p-4">
+          <button class="w-full text-left faq-toggle font-semibold">How can I register for the fest? <span class="float-right">+</span></button>
+          <div class="faq-body hidden pt-4 text-gray-200">Registration is available online via the "Event Registration" link. Basic registration is compulsory for entry.</div>
+        </div>
+
+        <div class="glass rounded-lg p-4">
+          <button class="w-full text-left faq-toggle font-semibold">Is there an entry fee for the fest? <span class="float-right">+</span></button>
+          <div class="faq-body hidden pt-4 text-gray-200">Basic registration costs ₹1800 + convenience fee. Some events may have additional charges.</div>
+        </div>
+
+        <div class="glass rounded-lg p-4">
+          <button class="w-full text-left faq-toggle font-semibold">Where can I buy tickets or passes? <span class="float-right">+</span></button>
+          <div class="faq-body hidden pt-4 text-gray-200">Tickets will be sold on the official portal and at on-campus counters during the fest.</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="bg-black/30 py-12">
+        <div class="max-w-5xl mx-auto p-6 md:p-12">
+        <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center">Gallery</h2>
+    
+        <div class="relative overflow-hidden">
+    
+            <!-- Slider Wrapper -->
+            <div id="galleryTrack" class="flex transition-transform duration-500 ease-out">
+            <img src="assets/g1.jpg" class="gallery-img" />
+            <img src="assets/g2.jpg" class="gallery-img" />
+            <img src="assets/g3.jpg" class="gallery-img" />
+            <img src="assets/g4.jpg" class="gallery-img" />
+            <img src="assets/g5.jpg" class="gallery-img" />
+            <img src="assets/g6.jpg" class="gallery-img" />
+            <img src="assets/g7.jpg" class="gallery-img" />
+            <img src="assets/g8.jpg" class="gallery-img" />
+            <img src="assets/g9.jpg" class="gallery-img" />
+            </div>
+    
+            <!-- Navigation -->
+            <button id="galleryPrev"
+            class="absolute left-3 top-1/2 -translate-y-1/2 bg-black/50 backdrop-blur p-3 text-white rounded-full">
+            ‹
+            </button>
+    
+            <button id="galleryNext"
+            class="absolute right-3 top-1/2 -translate-y-1/2 bg-black/50 backdrop-blur p-3 text-white rounded-full">
+            ›
+            </button>
+    
+        </div>
+        </div>
+    </section>
+  
+
+    <!-- REGISTER / MEMBERSHIP CARD -->
+    <section id="register" class="max-w-4xl mx-auto p-6 md:p-12">
+      <div class="glass p-6 rounded-xl">
+        <h3 class="text-xl font-bold">Membership Benefits</h3>
+        <ol class="mt-4 list-decimal list-inside text-gray-200 space-y-2">
+          <li>Green cess</li>
+          <li>Security cess</li>
+          <li>Hospitality</li>
+          <li>Emergency services</li>
+          <li>Swachh Bharat cess</li>
+          <li>Food court charges</li>
+          <li>Access to exclusive partner offers</li>
+          <li>Access to most events (payments may be needed for some)</li>
+        </ol>
+        <div class="mt-6 flex items-center justify-between">
+          <div>
+            <div class="text-xl font-extrabold">Cost: <span class="text-yellow-300">₹1800</span></div>
+            <div class="text-sm text-gray-400">+ 2% Convenience Fee</div>
+          </div>
+          
+          <a href="https://www.youtube.com/watch?v=J1zcfvGPBfg&list=RDJ1zcfvGPBfg&start_radio=1" 
+            target="_blank" rel="noopener"
+            class="bg-amber-400 text-black px-4 py-2 rounded font-semibold">
+            Buy Membership
+          </a>        
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-gray-800 mt-12">
+    <div class="max-w-6xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div>
+        <div class="font-bold text-lg">ECHOES</div>
+        <p class="text-sm text-gray-400 mt-2">Follow Echoes, AIIMS Bilaspur's annual fest on these social platforms for updates.</p>
+        <div class="flex gap-3 mt-4">
+          <div class="w-8 h-8 rounded-full bg-green-600"></div>
+          <div class="w-8 h-8 rounded-full bg-blue-600"></div>
+          <div class="w-8 h-8 rounded-full bg-pink-500"></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="text-red-400 font-semibold">Useful Links</div>
+        <ul class="mt-3 text-sm text-gray-300 space-y-2">
+          <li><a href="#events">Events</a></li>
+          <li><a href="#register">Basic Registration</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="text-red-400 font-semibold">Contact</div>
+        <div class="mt-3 text-sm text-gray-300">
+            AIIMS Bilaspur, Kothipura, District Bilaspur, Himachal Pradesh, PIN 174001. <br/>
+          Mail: echoes@aiimsbilaspur.edu.in
+n        </div>
+      </div>
+    </div>
+    <div class="text-center text-gray-600 pb-6">© 2025 Echoes. All Rights Reserved.</div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script>
+    // Mobile drawer toggle
+    const mobileBtn = document.getElementById('mobileBtn');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    mobileBtn && mobileBtn.addEventListener('click', ()=> mobileDrawer.classList.toggle('hidden'));
+
+    // Countdown (set a target date: Oct 8, 2025 09:00)
+    const target = new Date('2025-12-13T09:00:00');
+    function updateCountdown(){
+      const now = new Date();
+      const diff = target - now;
+      if(diff<=0) return;
+      const days = Math.floor(diff/ (1000*60*60*24));
+      const hours = Math.floor((diff/ (1000*60*60))%24);
+      const minutes = Math.floor((diff/ (1000*60))%60);
+      const seconds = Math.floor((diff/1000)%60);
+      document.getElementById('days').innerText = days;
+      document.getElementById('hours').innerText = hours;
+      document.getElementById('minutes').innerText = minutes;
+      document.getElementById('seconds').innerText = seconds;
+    }
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    // FAQ toggles
+    document.querySelectorAll('.faq-toggle').forEach(btn=>{
+      btn.addEventListener('click', ()=>{
+        const body = btn.parentElement.querySelector('.faq-body');
+        body.classList.toggle('hidden');
+        btn.querySelector('span').innerText = body.classList.contains('hidden') ? '+' : '−';
+      });
+    });
+
+
+
+    const track = document.getElementById("galleryTrack");
+    const next = document.getElementById("galleryNext");
+    const prev = document.getElementById("galleryPrev");
+
+    const images = track.children;
+    let index = 0;
+
+    function updateSlider() {
+        track.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    function nextSlide() {
+        index = (index + 1) % images.length;
+        updateSlider();
+    }
+
+    // Buttons
+    next.onclick = () => {
+        nextSlide();
+        resetAutoplay();
+    };
+
+    prev.onclick = () => {
+        index = (index - 1 + images.length) % images.length;
+        updateSlider();
+        resetAutoplay();
+    };
+
+    // --- AUTOPLAY ---
+    let autoplay = setInterval(nextSlide, 3000); // Slide every 3s
+
+    function resetAutoplay() {
+        clearInterval(autoplay);
+        autoplay = setInterval(nextSlide, 3000);
+    }
+
+    // Keep alignment consistent on window resize
+    window.addEventListener("resize", updateSlider);
+
+
+  </script>
+
+</body>
+</html>
