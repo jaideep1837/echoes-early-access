@@ -60,6 +60,22 @@
         scroll-behavior: smooth;
     }
 
+    .sub-event-card {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sub-event-img {
+      width: 100%;
+      height: auto;       /* keeps original Gemini ratio */
+      aspect-ratio: auto; /* allows natural dimensions */
+      object-fit: cover;
+    }
+
+
+
+    
+
 </style>
 </head>
 <body class="text-gray-200">
@@ -601,39 +617,41 @@
   </footer>
 
 
-  <!-- EVENT MODAL -->
-  <div id="eventModal"
-  class="fixed inset-0 bg-black/70 backdrop-blur-sm hidden items-center justify-center z-[9999] p-4">
+ <!-- SUB-EVENT MODAL -->
+<div id="subEventModal" class="fixed inset-0 bg-black/70 backdrop-blur-sm hidden 
+flex items-center justify-center z-[9999] p-4">
 
-  <div class="bg-black/40 glass rounded-xl max-w-3xl w-full p-6 relative">
+<div class="bg-black/40 border-gray-800 glass rounded-xl max-w-4xl w-full p-6 relative">
 
-  <!-- Close Button -->
-  <button id="modalClose"
-        class="absolute top-3 right-3 text-white bg-white/10 hover:bg-white/20 px-3 py-1 rounded">
-  ✕
-  </button>
+<!-- Close Button -->
+<button id="subEventClose"
+class="absolute top-3 right-3 text-white bg-white/10 hover:bg-white/20 px-3 py-1 rounded">
+✕
+</button>
 
-  <h2 id="modalTitle" class="text-2xl font-bold mb-4"></h2>
+<h2 id="subEventTitle" class="text-2xl font-bold mb-6 text-center"></h2>
 
-  <!-- Image slider inside modal -->
-  <div class="relative overflow-hidden rounded-xl">
-  <div id="modalGallery"
-        class="flex transition-transform duration-500">
-  </div>
+<!-- Slider Wrapper -->
+<div class="relative overflow-hidden">
 
-  <button id="modalPrev"
-          class="absolute left-3 top-1/2 -translate-y-1/2 bg-black/50 p-2 rounded-full">
-    ‹
-  </button>
+<div id="subEventTrack"
+     class="flex transition-transform duration-500"></div>
 
-  <button id="modalNext"
-          class="absolute right-3 top-1/2 -translate-y-1/2 bg-black/50 p-2 rounded-full">
-    ›
-  </button>
-  </div>
+<!-- Navigation arrows -->
+<button id="subPrev"
+  class="absolute left-3 top-1/2 -translate-y-1/2 bg-black/50 p-2 rounded-full text-white">
+  ‹
+</button>
 
-  </div>
-  </div>
+<button id="subNext"
+  class="absolute right-3 top-1/2 -translate-y-1/2 bg-black/50 p-2 rounded-full text-white">
+  ›
+</button>
+
+</div>
+
+</div>
+</div>
 
   
 
