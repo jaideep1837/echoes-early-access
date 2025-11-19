@@ -68,15 +68,167 @@ window.addEventListener("resize", updateSlider);
 
 // Sub-event data
 const subEvents = {
-  kalakriti: [
-    { title: "Stage Play", img: "assets/sub-kal1.jpg", desc: "A theatrical performance filled with intense storytelling.", link: "#" },
-    { title: "Monoacting", img: "assets/sub-kal2.jpg", desc: "One actor, one spotlight, countless emotions.", link: "#" },
-    { title: "Horror Dramatics", img: "assets/sub-kal3.jpg", desc: "Perform spine-chilling acts that push creativity.", link: "#" }
+  oasis: [
+    {
+      title: "Solo (Classical)",
+      img: "assets/oasis-solo-classical.jpg",
+      desc: "Classical solo dance performance.",
+      link: "#"
+    },
+    {
+      title: "Solo (Others)",
+      img: "assets/oasis-solo-others.jpg",
+      desc: "Non-classical solo dance styles.",
+      link: "#"
+    },
+    {
+      title: "Duet",
+      img: "assets/oasis-duet.jpg",
+      desc: "Two-performer duet dance performance.",
+      link: "#"
+    },
+    {
+      title: "Group",
+      img: "assets/oasis-group.jpg",
+      desc: "Group dance competition with choreography.",
+      link: "#"
+    }
   ],
+  
+
+  cultural: [
+    {
+      title: "Solo (Indian)",
+      img: "assets/cultural-solo-indian.jpg",
+      desc: "Indian solo singing performance.",
+      link: "#"
+    },
+    {
+      title: "Solo (Western)",
+      img: "assets/cultural-solo-western.jpg",
+      desc: "Western solo singing competition.",
+      link: "#"
+    },
+    {
+      title: "Duet Singing",
+      img: "assets/cultural-duet.jpg",
+      desc: "Two-member duet singing event.",
+      link: "#"
+    },
+    {
+      title: "Group Singing",
+      img: "assets/cultural-group.jpg",
+      desc: "Group musical performance.",
+      link: "#"
+    },
+    {
+      title: "Instrumental & Unorthodox",
+      img: "assets/cultural-instrumental.jpg",
+      desc: "Instrumental and experimental music acts.",
+      link: "#"
+    },
+    {
+      title: "Monoact & Mimicry",
+      img: "assets/cultural-monoact.jpg",
+      desc: "Solo acting, mimicry, and mime performances.",
+      link: "#"
+    },
+    {
+      title: "Drama",
+      img: "assets/cultural-drama.jpg",
+      desc: "Drama and theatrical stage performance.",
+      link: "#"
+    }
+  ],
+  
+
+  psychedelit: [
+    { 
+      title: "Poetry", 
+      img: "assets/lit-poetry.jpg", 
+      desc: "Express emotions and stories through powerful spoken or written poetry.", 
+      link: "#" 
+    },
+    { 
+      title: "Extempore", 
+      img: "assets/lit-extempore.jpg", 
+      desc: "Think fast and speak your mind with spontaneous speech delivery.", 
+      link: "#" 
+    },
+    { 
+      title: "Debate", 
+      img: "assets/lit-debate.jpg", 
+      desc: "Engage in intense argumentation and showcase your reasoning skills.", 
+      link: "#" 
+    },
+    { 
+      title: "Anime Quiz", 
+      img: "assets/lit-animequiz.jpg", 
+      desc: "Test your knowledge of anime, characters, themes, and storylines.", 
+      link: "#" 
+    },
+    { 
+      title: "Open Mic", 
+      img: "assets/lit-openmic.jpg", 
+      desc: "A free stage for poems, stories, songs, stand-up or spoken word.", 
+      link: "#" 
+    },
+    { 
+      title: "Creative Writing", 
+      img: "assets/lit-creativewriting.jpg", 
+      desc: "Unleash imaginative storytelling through prompts and themes.", 
+      link: "#" 
+    },
+    { 
+      title: "Shayari", 
+      img: "assets/lit-shayari.jpg", 
+      desc: "Mesmerizing couplets and rhyming verses full of emotion.", 
+      link: "#" 
+    },
+    { 
+      title: "ReCreate a Scene", 
+      img: "assets/lit-recreate.jpg", 
+      desc: "Act out and recreate iconic scenes from movies, anime or dramas.", 
+      link: "#" 
+    }
+  ],
+  
+
+  artandcraft: [
+    { title: "Painting", img: "assets/ac-painting.jpg", desc: "Express your creativity using colors and canvas.", link: "#" },
+    { title: "Sketching", img: "assets/ac-sketcing.jpg", desc: "Create sketches with precision and imagination.", link: "#" },
+    { title: "Best Out of Waste", img: "assets/ac-waste.jpg", desc: "Craft useful items with recycled materials.", link: "#" },
+    { title: "Stone Doodles", img: "assets/ac-stonedoodles.jpg", desc: "Decorate stones with doodles and creative patterns.", link: "#" },
+    { title: "Calligraphy", img: "assets/ac-calligraphy.jpg", desc: "Showcase artistic lettering and penmanship skills.", link: "#" },
+    { title: "Mehandi", img: "assets/ac-mehandi.jpg", desc: "Creative henna art with traditional and modern designs.", link: "#" },
+    { title: "Rangoli", img: "assets/ac-rangoli.jpg", desc: "Beautiful rangoli patterns using colors and artistry.", link: "#" },
+  ],  
 
   starnight: [
-    { title: "Pro Night", img: "assets/sub-star1.jpg", desc: "Headline performers bringing energy to the main stage.", link: "#" },
-    { title: "DJ Night", img: "assets/sub-star2.jpg", desc: "Dance till midnight with pulsing EDM beats.", link: "#" }
+    {
+      title: "Sufi Night",
+      img: "assets/sub-star-sufi.jpg",
+      desc: "13 Dec • Experience soulful Sufi music with mesmerizing performances.",
+      link: "#"
+    },
+    {
+      title: "Band & Standup",
+      img: "assets/sub-star-band.jpg",
+      desc: "14 Dec • A powerful mix of live band performances and hilarious stand-up acts.",
+      link: "#"
+    },
+    {
+      title: "Bollywood & DJ",
+      img: "assets/sub-star-bollydj.jpg",
+      desc: "15 Dec • Groove to Bollywood hits followed by an electrifying DJ night.",
+      link: "#"
+    },
+    {
+      title: "Haryanvi & Violin",
+      img: "assets/sub-star-haryanvi.jpg",
+      desc: "16 Dec • A fusion of energetic Haryanvi beats and soothing violin melodies.",
+      link: "#"
+    }
   ],
 
   sports: [
@@ -86,12 +238,12 @@ const subEvents = {
     { title: "Volleyball", img: "assets/s-volleyball.png", desc: "6v6 • Spartan ball | 3–5 sets", link: "#" },
     { title: "Basketball", img: "assets/s-basketball.png", desc: "Nivia Pro balls • 4 quarters", link: "#" },
     { title: "Kabaddi", img: "assets/s-kabaddi.png", desc: "Bonus rule active • Boys & Girls", link: "#" },
-    // { title: "Table Tennis", img: "assets/sports-tt.jpg", desc: "Rapid & Blitz formats", link: "#" },
-    // { title: "Chess", img: "assets/sports-chess.jpg", desc: "Rapid 10+0 • Blitz 3+2", link: "#" },
-    // { title: "Carrom", img: "assets/sports-carrom.jpg", desc: "Singles • Doubles • Mixed", link: "#" },
-    // { title: "Athletics", img: "assets/sports-athletics.jpg", desc: "Sprint, Relay, Shotput, Discus, Javelin", link: "#" },
-    // { title: "Tug of War", img: "assets/sports-tugofwar.jpg", desc: "10-member team competition", link: "#" },
-    // { title: "Gym Events", img: "assets/sports-gym.jpg", desc: "Pushups, Pullups, Powerlifting & more", link: "#" }
+    { title: "Table Tennis", img: "assets/s-tt.png", desc: "Rapid & Blitz formats", link: "#" },
+    { title: "Chess", img: "assets/s-chess.png", desc: "Rapid 10+0 • Blitz 3+2", link: "#" },
+    { title: "Carrom", img: "assets/s-carrom.png", desc: "Singles • Doubles • Mixed", link: "#" },
+    { title: "Athletics", img: "assets/s-athletics.png", desc: "Sprint, Relay, Shotput, Discus, Javelin", link: "#" },
+    { title: "Tug of War", img: "assets/s-tugofwar.png", desc: "10-member team competition", link: "#" },
+    { title: "Gym Events", img: "assets/s-gym.png", desc: "Pushups, Pullups, Powerlifting & more", link: "#" }
   ]
 };
 
