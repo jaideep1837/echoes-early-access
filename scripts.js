@@ -73,71 +73,71 @@ const subEvents = {
       title: "Solo (Classical)",
       img: "assets/oasis-solo-classical.jpg",
       desc: "Classical solo dance performance.",
-      link: "#"
+      link: "https://www.instagram.com/dance_oasis_2725?igsh=MTd1M3RqcWl4bHdlaw=="
     },
     {
       title: "Solo (Others)",
       img: "assets/oasis-solo-others.jpg",
       desc: "Non-classical solo dance styles.",
-      link: "#"
+      link: "https://www.instagram.com/dance_oasis_2725?igsh=MTd1M3RqcWl4bHdlaw=="
     },
     {
       title: "Duet",
       img: "assets/oasis-duet.jpg",
       desc: "Two-performer duet dance performance.",
-      link: "#"
+      link: "https://www.instagram.com/dance_oasis_2725?igsh=MTd1M3RqcWl4bHdlaw=="
     },
     {
       title: "Group",
       img: "assets/oasis-group.jpg",
       desc: "Group dance competition with choreography.",
-      link: "#"
+      link: "https://www.instagram.com/dance_oasis_2725?igsh=MTd1M3RqcWl4bHdlaw=="
     }
   ],
   
 
-  cultural: [
+  zenith: [
     {
       title: "Solo (Indian)",
       img: "assets/cultural-solo-indian.jpg",
       desc: "Indian solo singing performance.",
-      link: "#"
+      link: "https://www.instagram.com/zenith_aiims?igsh=cmk3dnhjYXA4cml0"
     },
     {
       title: "Solo (Western)",
       img: "assets/cultural-solo-western.jpg",
       desc: "Western solo singing competition.",
-      link: "#"
+      link: "https://www.instagram.com/zenith_aiims?igsh=cmk3dnhjYXA4cml0"
     },
     {
       title: "Duet Singing",
       img: "assets/cultural-duet.jpg",
       desc: "Two-member duet singing event.",
-      link: "#"
+      link: "https://www.instagram.com/zenith_aiims?igsh=cmk3dnhjYXA4cml0"
     },
     {
       title: "Group Singing",
       img: "assets/cultural-group.jpg",
       desc: "Group musical performance.",
-      link: "#"
+      link: "https://www.instagram.com/zenith_aiims?igsh=cmk3dnhjYXA4cml0"
     },
     {
       title: "Instrumental & Unorthodox",
       img: "assets/cultural-instrumental.jpg",
       desc: "Instrumental and experimental music acts.",
-      link: "#"
+      link: "https://www.instagram.com/zenith_aiims?igsh=cmk3dnhjYXA4cml0"
     },
     {
       title: "Monoact & Mimicry",
       img: "assets/cultural-monoact.jpg",
       desc: "Solo acting, mimicry, and mime performances.",
-      link: "#"
+      link: "https://www.instagram.com/zenith_aiims?igsh=cmk3dnhjYXA4cml0"
     },
     {
       title: "Drama",
       img: "assets/cultural-drama.jpg",
       desc: "Drama and theatrical stage performance.",
-      link: "#"
+      link: "https://www.instagram.com/zenith_aiims?igsh=cmk3dnhjYXA4cml0"
     }
   ],
   
@@ -147,61 +147,61 @@ const subEvents = {
       title: "Poetry", 
       img: "assets/lit-poetry.jpg", 
       desc: "Express emotions and stories through powerful spoken or written poetry.", 
-      link: "#" 
+      link: "https://www.instagram.com/psychedelit_aiims_bilaspur?igsh=cXI1NWF4cTQzejAw" 
     },
     { 
       title: "Extempore", 
       img: "assets/lit-extempore.jpg", 
       desc: "Think fast and speak your mind with spontaneous speech delivery.", 
-      link: "#" 
+      link: "https://www.instagram.com/psychedelit_aiims_bilaspur?igsh=cXI1NWF4cTQzejAw" 
     },
     { 
       title: "Debate", 
       img: "assets/lit-debate.jpg", 
       desc: "Engage in intense argumentation and showcase your reasoning skills.", 
-      link: "#" 
+      link: "https://www.instagram.com/psychedelit_aiims_bilaspur?igsh=cXI1NWF4cTQzejAw" 
     },
     { 
       title: "Anime Quiz", 
       img: "assets/lit-animequiz.jpg", 
       desc: "Test your knowledge of anime, characters, themes, and storylines.", 
-      link: "#" 
+      link: "https://www.instagram.com/psychedelit_aiims_bilaspur?igsh=cXI1NWF4cTQzejAw" 
     },
     { 
       title: "Open Mic", 
       img: "assets/lit-openmic.jpg", 
       desc: "A free stage for poems, stories, songs, stand-up or spoken word.", 
-      link: "#" 
+      link: "https://www.instagram.com/psychedelit_aiims_bilaspur?igsh=cXI1NWF4cTQzejAw" 
     },
     { 
       title: "Creative Writing", 
       img: "assets/lit-creativewriting.jpg", 
       desc: "Unleash imaginative storytelling through prompts and themes.", 
-      link: "#" 
+      link: "https://www.instagram.com/psychedelit_aiims_bilaspur?igsh=cXI1NWF4cTQzejAw" 
     },
     { 
       title: "Shayari", 
       img: "assets/lit-shayari.jpg", 
       desc: "Mesmerizing couplets and rhyming verses full of emotion.", 
-      link: "#" 
+      link: "https://www.instagram.com/psychedelit_aiims_bilaspur?igsh=cXI1NWF4cTQzejAw" 
     },
     { 
       title: "ReCreate a Scene", 
       img: "assets/lit-recreate.jpg", 
       desc: "Act out and recreate iconic scenes from movies, anime or dramas.", 
-      link: "#" 
+      link: "https://www.instagram.com/psychedelit_aiims_bilaspur?igsh=cXI1NWF4cTQzejAw"
     }
   ],
   
 
   artandcraft: [
-    { title: "Painting", img: "assets/ac-painting.jpg", desc: "Express your creativity using colors and canvas.", link: "#" },
-    { title: "Sketching", img: "assets/ac-sketcing.jpg", desc: "Create sketches with precision and imagination.", link: "#" },
-    { title: "Best Out of Waste", img: "assets/ac-waste.jpg", desc: "Craft useful items with recycled materials.", link: "#" },
-    { title: "Stone Doodles", img: "assets/ac-stonedoodles.jpg", desc: "Decorate stones with doodles and creative patterns.", link: "#" },
-    { title: "Calligraphy", img: "assets/ac-calligraphy.jpg", desc: "Showcase artistic lettering and penmanship skills.", link: "#" },
-    { title: "Mehandi", img: "assets/ac-mehandi.jpg", desc: "Creative henna art with traditional and modern designs.", link: "#" },
-    { title: "Rangoli", img: "assets/ac-rangoli.jpg", desc: "Beautiful rangoli patterns using colors and artistry.", link: "#" },
+    { title: "Painting", img: "assets/ac-painting.jpg", desc: "Express your creativity using colors and canvas.", link: "https://www.instagram.com/zenith_aiims?igsh=cmk3dnhjYXA4cml0" },
+    { title: "Sketching", img: "assets/ac-sketcing.jpg", desc: "Create sketches with precision and imagination.", link: "https://www.instagram.com/zenith_aiims?igsh=cmk3dnhjYXA4cml0" },
+    { title: "Best Out of Waste", img: "assets/ac-waste.jpg", desc: "Craft useful items with recycled materials.", link: "https://www.instagram.com/zenith_aiims?igsh=cmk3dnhjYXA4cml0" },
+    { title: "Stone Doodles", img: "assets/ac-stonedoodles.jpg", desc: "Decorate stones with doodles and creative patterns.", link: "https://www.instagram.com/zenith_aiims?igsh=cmk3dnhjYXA4cml0" },
+    { title: "Calligraphy", img: "assets/ac-calligraphy.jpg", desc: "Showcase artistic lettering and penmanship skills.", link: "https://www.instagram.com/zenith_aiims?igsh=cmk3dnhjYXA4cml0" },
+    { title: "Mehandi", img: "assets/ac-mehandi.jpg", desc: "Creative henna art with traditional and modern designs.", link: "https://www.instagram.com/zenith_aiims?igsh=cmk3dnhjYXA4cml0" },
+    { title: "Rangoli", img: "assets/ac-rangoli.jpg", desc: "Beautiful rangoli patterns using colors and artistry.", link: "https://www.instagram.com/zenith_aiims?igsh=cmk3dnhjYXA4cml0" },
   ],  
 
   starnight: [
@@ -232,18 +232,18 @@ const subEvents = {
   ],
 
   sports: [
-    { title: "Cricket", img: "assets/s-cricket.png", desc: "Boys: ₹5000 • Girls: ₹2000 | Leather ball & Wind ball", link: "#" },
-    { title: "Football", img: "assets/s-football.png", desc: "9v9 Boys • 7v7 Girls | Offside only for boys", link: "#" },
-    { title: "Badminton", img: "assets/s-badminton.png", desc: "Singles ₹250 • Doubles ₹500 | Mavis 350", link: "#" },
-    { title: "Volleyball", img: "assets/s-volleyball.png", desc: "6v6 • Spartan ball | 3–5 sets", link: "#" },
-    { title: "Basketball", img: "assets/s-basketball.png", desc: "Nivia Pro balls • 4 quarters", link: "#" },
-    { title: "Kabaddi", img: "assets/s-kabaddi.png", desc: "Bonus rule active • Boys & Girls", link: "#" },
-    { title: "Table Tennis", img: "assets/s-tt.png", desc: "Rapid & Blitz formats", link: "#" },
-    { title: "Chess", img: "assets/s-chess.png", desc: "Rapid 10+0 • Blitz 3+2", link: "#" },
-    { title: "Carrom", img: "assets/s-carrom.png", desc: "Singles • Doubles • Mixed", link: "#" },
-    { title: "Athletics", img: "assets/s-athletics.png", desc: "Sprint, Relay, Shotput, Discus, Javelin", link: "#" },
-    { title: "Tug of War", img: "assets/s-tugofwar.png", desc: "10-member team competition", link: "#" },
-    { title: "Gym Events", img: "assets/s-gym.png", desc: "Pushups, Pullups, Powerlifting & more", link: "#" }
+    { title: "Cricket", img: "assets/s-cricket.png", desc: "Boys: ₹5000 • Girls: ₹2000 | Leather ball & Wind ball", link: "https://www.instagram.com/spardha_aiims_bls?igsh=MTN6aXhjNXA0ZHlrOA==" },
+    { title: "Football", img: "assets/s-football.png", desc: "9v9 Boys • 7v7 Girls | Offside only for boys", link: "https://www.instagram.com/spardha_aiims_bls?igsh=MTN6aXhjNXA0ZHlrOA==" },
+    { title: "Badminton", img: "assets/s-badminton.png", desc: "Singles ₹250 • Doubles ₹500 | Mavis 350", link: "https://www.instagram.com/spardha_aiims_bls?igsh=MTN6aXhjNXA0ZHlrOA==" },
+    { title: "Volleyball", img: "assets/s-volleyball.png", desc: "6v6 • Spartan ball | 3–5 sets", link: "https://www.instagram.com/spardha_aiims_bls?igsh=MTN6aXhjNXA0ZHlrOA==" },
+    { title: "Basketball", img: "assets/s-basketball.png", desc: "Nivia Pro balls • 4 quarters", link: "https://www.instagram.com/spardha_aiims_bls?igsh=MTN6aXhjNXA0ZHlrOA==" },
+    { title: "Kabaddi", img: "assets/s-kabaddi.png", desc: "Bonus rule active • Boys & Girls", link: "https://www.instagram.com/spardha_aiims_bls?igsh=MTN6aXhjNXA0ZHlrOA==" },
+    { title: "Table Tennis", img: "assets/s-tt.png", desc: "Rapid & Blitz formats", link: "https://www.instagram.com/spardha_aiims_bls?igsh=MTN6aXhjNXA0ZHlrOA==" },
+    { title: "Chess", img: "assets/s-chess.png", desc: "Rapid 10+0 • Blitz 3+2", link: "https://www.instagram.com/spardha_aiims_bls?igsh=MTN6aXhjNXA0ZHlrOA==" },
+    { title: "Carrom", img: "assets/s-carrom.png", desc: "Singles • Doubles • Mixed", link: "https://www.instagram.com/spardha_aiims_bls?igsh=MTN6aXhjNXA0ZHlrOA==" },
+    { title: "Athletics", img: "assets/s-athletics.png", desc: "Sprint, Relay, Shotput, Discus, Javelin", link: "https://www.instagram.com/spardha_aiims_bls?igsh=MTN6aXhjNXA0ZHlrOA==" },
+    { title: "Tug of War", img: "assets/s-tugofwar.png", desc: "10-member team competition", link: "https://www.instagram.com/spardha_aiims_bls?igsh=MTN6aXhjNXA0ZHlrOA==" },
+    { title: "Gym Events", img: "assets/s-gym.png", desc: "Pushups, Pullups, Powerlifting & more", link: "https://www.instagram.com/spardha_aiims_bls?igsh=MTN6aXhjNXA0ZHlrOA==" }
   ]
 };
 
